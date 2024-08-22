@@ -857,53 +857,38 @@
     <!-- end client section -->
 
     <!-- contact section -->
-    <section class="contact_section  long_section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="">
-                    <div class="form_container">
-                        <div class="heading_container">
-                            <h2>
-                                Contact Us
-                            </h2>
+<section class="contact_section long_section" id="contact">
+    <div class="container">
+        <div class="row justify-content-center"> <!-- Center the form -->
+            <div class="col-lg-6 col-md-8"> <!-- Limit width on larger screens -->
+                <div class="form_container">
+                    <div class="heading_container">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" name="name" class="form-control" required />
                         </div>
-                        <form id="contactForm">
-                            <div>
-                                <input type="text" placeholder="Your Name" name="name"
-                                    style="background-color: rgba(0, 0, 0, 0.283);" required />
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Phone Number" name="mobileNumber"
-                                    style="background-color: rgba(0, 0, 0, 0.283);" required />
-                            </div>
-                            <div>
-                                <input type="email" placeholder="Email" name="email"
-                                    style="background-color: rgba(0, 0, 0, 0.283);" required />
-                            </div>
-                            <div>
-                                <input type="text" class="message-box" placeholder="Message" name="message"
-                                    style="background-color: rgba(0, 0, 0, 0.283);" required />
-                            </div>
-                            <div class="btn_box">
-                                <button onclick="submitForm()">
-                                    SEND
-                                </button>
-
-                                <p id="responseMessage" class="mt-5"></p>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone Number" name="mobileNumber" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" name="email" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" name="message" class="form-control message-box" required></textarea>
+                        </div>
+                        <div class="btn_box text-center"> <!-- Center the button -->
+                            <button type="button" onclick="submitForm()">SEND</button>
+                            <p id="responseMessage" class="mt-5"></p>
+                        </div>
+                    </form>
                 </div>
-                <!-- <div class="col-md-6">
-                    <div class="map_container">
-                        <div class="map"> -->
-                <!-- <div id="googleMap"></div> -->
-                <!-- </div>
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- end contact section -->
 
     <!-- info section -->
